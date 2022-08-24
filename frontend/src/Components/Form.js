@@ -34,7 +34,7 @@ const Form = function () {
 
         const data = {email,happy,total,roi,future,browser}
 
-        const result = await axios.post('http://localhost:8800/form/new',data,{
+        const result = await axios.post('/api/form/new',data,{
             headers: {'Content-Type':'application/json'}
         })
 
