@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: rgb(217, 167, 126);
+    --test-color: #5babd4;
+    --input-color: #f1f4f5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: gainsboro;
+    font-family: 'Poppins',sans-serif;
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Form Container */
+
+.form-container {
+    max-width: 550px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px 0px;
+    border-radius: 15px;
+}
+
+/* Form Header */
+
+.form-container .title {
+    font-size: 1.3rem;
+    margin: 40px 0px 50px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.form-container .title i {
+    color: orange;
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+/* Note */
+.note {
+    font-size: 0.75rem;
+    margin: 60px;
+    color: rgb(101, 101, 101);
+    text-align: justify;
+}
+
+/* Form */
+
+.form-container form {
+    margin: 30px 30px;
+    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.form-container form > div {
+    margin: 30px;
+}
+
+.form-container form .label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+} 
+
+.form-container form label .extra {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.form-container form .happy-cont label:nth-of-type(2),
+.form-container form .future-cont label:nth-of-type(2) {
+    margin-right: 50px;
+} 
+
+/* Form Input */
+
+.form-container form input[type='email'],
+.form-container form input[type='number'] {
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    background: var(--input-color);
+}
+
+.form-container form input[type='number'] {
+    -moz-appearance: none;
+}
+
+.form-container form input[type='number']::-webkit-outer-spin-button,
+.form-container form input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.form-container form input:focus {
+    outline: none;
+}
+
+.form-container form .submit-btn {
+    text-align: center;
+}
+
+.form-container form input[type='submit'] {
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    padding: 18px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.form-container form label span {
+    color: red;
+    padding-left: 2px;
+    font-size: 1.1rem;
+}
+
+.form-container form .happy-cont label:first-child {
+    text-align: justify;
+}
+
+.empty {
+    width: 100vw;
+    height: 20px;
+}
+
+@media (max-width: 750px){
+    .container {
+        margin: 0px;
+    }
+    
+    /* Form Container */
+    
+    .form-container {
+        border-radius: 0px;
+        margin: 0px;
+    }
+ 
+    .form-container form {
+        margin: 30px 20px;
+    }
+
+
+    /* Form Input */
+    .form-container form input[type='email'],
+    .form-container form input[type='number'] {
+        padding: 15px 10px;
+    }
+
+    .form-container form input[type='submit']{
+        width: 100%;
+    }
+
+    /* Note */
+    .note {
+        font-size: 0.8rem;
+        margin: 40px;
+    }
+        
+    .empty {
+        width: 0px;
+        height: 0px;
+    }   
+}
+
+/* Success */
+
+.container-success {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    max-width: 550px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
+.card .title p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.card .message .nft {
+    line-height: 1rem;
+    text-align: justify;
+    font-size: 0.9rem;
+} 
+
+.container-success .card input {
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 30px; 
+    cursor: pointer;   
+    text-decoration: none;
+}
+
+p .fa-gear {
+    animation: rotate 4s ease 0s infinite forwards;
+}
+
+@keyframes rotate {
+
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
