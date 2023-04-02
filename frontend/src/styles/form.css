@@ -11,13 +11,11 @@
     margin: 0;
 }
 
-body {
-    background: gainsboro;
-    font-family: 'Poppins',sans-serif;
-    width: 100vw;
-}
 
 .container {
+    padding: 100px 0px;
+    /* background: gainsboro; */
+    font-family: 'Poppins',sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -25,7 +23,7 @@ body {
 
 /* Form Container */
 
-.form-container {
+.container .form-container {
     max-width: 550px;
     background: white;
     margin: 20px auto;
@@ -35,7 +33,7 @@ body {
 
 /* Form Header */
 
-.form-container .title {
+.container .form-container .title {
     font-size: 1.3rem;
     margin: 40px 0px 50px;
     color: var(--primary-color);
@@ -46,14 +44,14 @@ body {
     font-weight: 800;
 }
 
-.form-container .title i {
+.container .form-container .title i {
     color: orange;
     font-size: 3rem;
     margin-right: 10px;
 }
 
 /* Note */
-.note {
+.container .form-container .note {
     font-size: 0.75rem;
     margin: 60px;
     color: rgb(101, 101, 101);
@@ -62,36 +60,36 @@ body {
 
 /* Form */
 
-.form-container form {
+.container .form-container form {
     margin: 30px 30px;
     font-size: 0.8rem;
     font-size: 0.9rem;
 }
 
-.form-container form > div {
+.container .form-container form > div {
     margin: 30px;
 }
 
-.form-container form .label {
+.container .form-container form .label {
     display: block;
     margin-bottom: 8px;
     font-size: 1rem;
 } 
 
-.form-container form label .extra {
+.container .form-container form label .extra {
     font-size: 0.8rem;
     color: gray;
 }
 
-.form-container form .happy-cont label:nth-of-type(2),
-.form-container form .future-cont label:nth-of-type(2) {
+.container .form-container form .happy-cont label:nth-of-type(2),
+.container .form-container form .future-cont label:nth-of-type(2) {
     margin-right: 50px;
 } 
 
 /* Form Input */
 
-.form-container form input[type='email'],
-.form-container form input[type='number'] {
+.container .form-container form input[type='email'],
+.container .form-container form input[type='number'] {
     border: none;
     padding: 10px;
     border-radius: 6px;
@@ -99,26 +97,26 @@ body {
     background: var(--input-color);
 }
 
-.form-container form input[type='number'] {
+.container .form-container form input[type='number'] {
     -moz-appearance: none;
 }
 
-.form-container form input[type='number']::-webkit-outer-spin-button,
-.form-container form input[type='number']::-webkit-inner-spin-button {
+.container .form-container form input[type='number']::-webkit-outer-spin-button,
+.container .form-container form input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 
 }
 
-.form-container form input:focus {
+.container .form-container form input:focus {
     outline: none;
 }
 
-.form-container form .submit-btn {
+.container .form-container form .submit-btn {
     text-align: center;
 }
 
-.form-container form input[type='submit'] {
+.container .form-container form input[type='submit'] {
     border: none;
     background: var(--primary-color);
     color: white;
@@ -133,13 +131,13 @@ body {
     cursor: pointer;
 }
 
-.form-container form label span {
+.container .form-container form label span {
     color: red;
     padding-left: 2px;
     font-size: 1.1rem;
 }
 
-.form-container form .happy-cont label:first-child {
+.container .form-container form .happy-cont label:first-child {
     text-align: justify;
 }
 
@@ -150,28 +148,29 @@ body {
 
 @media (max-width: 750px){
     .container {
+        padding: 0px;
         margin: 0px;
     }
     
     /* Form Container */
     
-    .form-container {
+    .container .form-container {
         border-radius: 0px;
         margin: 0px;
     }
  
-    .form-container form {
+    .container .form-container form {
         margin: 30px 20px;
     }
 
 
     /* Form Input */
-    .form-container form input[type='email'],
-    .form-container form input[type='number'] {
+    .container .form-container form input[type='email'],
+    .container .form-container form input[type='number'] {
         padding: 15px 10px;
     }
 
-    .form-container form input[type='submit']{
+    .container .form-container form input[type='submit']{
         width: 100%;
     }
 

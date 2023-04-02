@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-import '../styles/style.css'
+import '../styles/form.css'
 
 const Success = () => {
 
