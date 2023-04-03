@@ -159,20 +159,34 @@ const Result = () => {
     <div className="heading">Conclusion</div>
     <div className="result">
       <ul>
-        <li>around 83% people are not happy with taxation</li>
-        <li>around 74% people are in losses due to recent bear market</li>
+        <li>There were around 4351 clicks to our ad campaign</li>
+        <li>246 submissions were found to be valid after filtering the entires</li>
+        <li>84.55% people found out not to be happy with taxation and 15.44% are to found out to be happy with the taxations.</li>
+        <li>around 71.95% people are in losses due to recent bear market</li>
+        <li>Out of all the entries only 6.91% of people found out to be in profits more than 50% of their investment. 4.47% of people are found to be in the profit range of 30-50% and around 15.83% of people are in profits range of 0-30% </li>
         <li>
-          75% of people have invested around 40k inr, 50% of people have
-          invested around 83k and 25% people have invested around 115k, for the
-          taken sample
+          25.6% of people have invested around 0-40k INR, 50.8% of people have
+          invested around 0-78k INR and 75% people have invested around 0-115k INR, for the
+          sample taken.
         </li>
         <li>
-          Around 86% of the people aren't happy with taxation rules on crypto
-          especially during bear cycle (around 73% of people are in losses) with
-          no option to set-off profits and losses. Due to taxation, around 35%
-          of the people aren't trading crypto anymore.
+          Around 84.55% of the people aren't happy with taxation rules on crypto
+          especially during bear cycle (around 71.95% of people are in losses) with
+          no option to set-off profits and losses. Around 40.24%
+          of the people aren't trading crypto anymore or atleast for the timebeing.
         </li>
       </ul>
+    </div>
+    <div className='note'>
+      <p className='heading'>Please Note: </p>
+      <div className='notes'>
+        <ul>
+          <li>The chances of data to be biased is possible based on their personal interest.</li>
+          <li>We don't intend anything to cause any type of riots.</li>
+          <li>We don't intend to create/spread any type of hate/terrorism.</li>
+          <li>Our main goal was to analyze the market's fear and what the future of cryptocurrencies looks like during the time of analysis of the survey.</li>
+        </ul> 
+      </div>
     </div>
   </div>
 </div>

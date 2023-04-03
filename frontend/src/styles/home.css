@@ -748,8 +748,9 @@ hr {
     margin: 100px;
 }
 
-.results-container .result {
-    margin: 100px auto 0px;
+.results-container .result,
+.results-container .notes {
+    margin: 40px auto 20px;
     width: 700px;
     height: 100%;
 }
@@ -775,11 +776,13 @@ hr {
     height: 100%;
 }
 
-.results-container .result ul {
+.results-container .result ul,
+.results-container .note ul {
     text-align: left;
 }
 
-.results-container .result li {
+.results-container .result li,
+.results-container .notes li {
     text-align: left;
     padding: 15px 0px;
 }
@@ -1173,7 +1176,8 @@ hr {
 
 /* Results */
 
-.results-container .result {
+.results-container .result,
+.results-container .notes {
     max-width: 330px;
 }
 
