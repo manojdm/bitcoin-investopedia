@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import initChart from '../scripts/chart'
-import loadNav from '../scripts/nav'
 import updateEMA from '../scripts/update';
 
 

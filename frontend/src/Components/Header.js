@@ -1,22 +1,28 @@
 import React, { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import '../styles/home.css'
 
 const Header = () => {
 
   const btn = useRef(null)
   const ele = useRef(null)
+
+  const location = useLocation()
+  const {pathname} = location
+
   const {userData} = useSelector(state => state.userLogin)
   let path = window.location.pathname
 
   const controlNav = () => {
 
+    console.log(btn.current.classList)
+
     if(!btn.current.classList.contains('open')){
       btn.current.classList.add('open')
       ele.current.style.display='block'
       ele.current.style.width='fit-content'
-    } else if(btn.current.classList.contains('open') == true){
+    } else {
       btn.current.classList.remove('open')
       ele.current.style.display='none'
     }    
@@ -24,14 +30,11 @@ const Header = () => {
   }
 
   useEffect(() => {
-
-    path = window.location.pathname
-    console.log(path)
-
-  }, [path]);
+    console.log(location)
+  }, [location, pathname]);
 
 
-  return (
+  return ((pathname != '/login' || pathname != '/register') &&
     <>
     <div className="nav-container">
     <div className="nav-title">

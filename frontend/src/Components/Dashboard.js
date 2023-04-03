@@ -1,7 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
+
+  const userLogin = useSelector(state => state.userLogin)
+  const {userData} = userLogin
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if(!userData?.id){
+      navigate('/login')
+    }
+  }, [])
+
   return (
 <div className="container">
   <div className="dashboard-container">

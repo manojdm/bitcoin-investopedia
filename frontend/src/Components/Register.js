@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { registerUser } from '../Actions/userActions'
 import image from '../images/login.png'
+import { hideNav } from '../scripts/nav'
 
 const Register = () => {
 
@@ -27,26 +28,18 @@ const Register = () => {
   }
 
   useEffect(
-      () => {
+    () => {
 
-        if(!loading){
-          if(success){
-            console.log('working')
-            navigate('/login')
-          }
+      if(!loading){
+        if(success || userData?.id){
+          navigate('/dashboard')
+          window.location.reload()
         }
-
-        // const nav = document.querySelector('.nav-container')
-        // const foot = document.querySelector('.footer-container')
-        // const mob = document.querySelector('.nav-mobile-container')
-  
-        // if(nav && foot){
-        //   nav.style.display = 'none'
-        //   foot.style.display = 'none'
-        //   mob.style.display = 'none'
-  
-        // }
       }
+
+      hideNav()
+
+    }
     ,[loading, success])
 
   return (

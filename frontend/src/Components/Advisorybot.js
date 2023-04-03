@@ -7,14 +7,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import '../styles/chatbot.css'
 import 'react-chatbot-kit/build/main.css';
 import { getMessages } from '../Actions/messageActions';
-import loadNav from '../scripts/nav';
 
 
 
 const Advisorybot = () => {
 
     useEffect(() => {
-        loadNav()
+
     },[])
 
     const saveMessages = (messages, HTMLString) => {

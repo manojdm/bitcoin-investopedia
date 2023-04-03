@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import loadNav from '../scripts/nav'
 import '../styles/home.css'
 
 const Home = () => {
+
+  useEffect(() => {
+    console.log('Console running....')
+  },[])
 
   return (
 <div className="container">

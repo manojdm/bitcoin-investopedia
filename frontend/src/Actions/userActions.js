@@ -12,8 +12,10 @@ const loginUser = (user) => async(dispatch) => {
         }
         const {data} = await axios.post('http://localhost:8800/api/user/login',user, header)
 
-        localStorage.setItem('userLogin', JSON.stringify(data))
-
+        if(user.rememberMe){
+            localStorage.setItem('userLogin', JSON.stringify(data))
+        }
+        
         dispatch({type: USER_LOGIN_SUCCESS, payload: data, success: true, loading: false})
 
     } catch(e) {

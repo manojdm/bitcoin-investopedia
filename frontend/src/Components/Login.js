@@ -5,11 +5,13 @@ import image from '../images/login.png'
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../Actions/userActions';
+import { hideNav } from '../scripts/nav';
 
 const Login = ({history}) => {
 
   const [username, setUserName] = useState('')
   const [password, setPassword] = useState('')
+  const [checked, setChecked] = useState(true)
 
   const userInfo = useSelector(state => state.userLogin)
   const {loading, success, userData} = userInfo
@@ -21,7 +23,7 @@ const Login = ({history}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    dispatch(loginUser({username, password}))
+    dispatch(loginUser({username, password, rememberMe : checked}))
 
   }
 
@@ -29,25 +31,15 @@ const Login = ({history}) => {
     () => {
 
       if(!loading){
-        if(success){
+        if(success || userData?.id){
           navigate('/dashboard')
           window.location.reload()
         }
       }
 
-      const nav = document.querySelector('.nav-container')
-      const foot = document.querySelector('.footer-container')
-      const mob = document.querySelector('.nav-mobile-container')
-
-      if(nav && foot){
-        nav.style.display = 'none'
-        foot.style.display = 'none'
-        mob.style.display = 'none'
-      }
-
+      hideNav()
 
     }
-
 
   ,[userData, success, loading])
 
@@ -71,7 +63,7 @@ const Login = ({history}) => {
         </div>
         <div className="extra">
           <div className="checkbox">
-            <input type="checkbox" className="check" defaultChecked={true}/>
+            <input onChange={(e) => setChecked(e.target.checked)} type="checkbox" className="check" defaultChecked={true}/>
             <label>Remember me</label>
           </div>
           <a className="forgot" href="/forgot-password">

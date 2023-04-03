@@ -12,7 +12,7 @@ body {
     color: white;
     font-family: sans-serif;
     padding: 100px 20px 20px;
-    width: calc(100%-20px) !important;
+    width: calc(100% - 40px) !important;
 }
 
 /* Utils */

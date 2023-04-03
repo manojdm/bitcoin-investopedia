@@ -15,7 +15,6 @@ const updateMarket = async () => {
     
     const res  = await fetch('https://api.binance.com/api/v3/ticker/24hr?symbols=[%22BTCUSDT%22]')
     const json = await res.json()
-    console.log(json)
     const data = json[0]
 
     price.textContent = parseFloat(data.lastPrice).toFixed(2);
@@ -35,13 +34,10 @@ const update9EMA = async () => {
         const res  = await fetch(url)
         const json = await res.json()
 
-        console.log(json)
-
         e9 = json.values[0].ema
 
         ema9.textContent = parseFloat(e9).toFixed(2)
     } catch(e) {
-        console.log(e)
     }
 
 }
