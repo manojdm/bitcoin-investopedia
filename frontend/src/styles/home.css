@@ -289,7 +289,7 @@ body {
 }
 
 .container .services-section .chatbot .left {
-    background: url('https://www.downloadclipart.net/large/domestic-robot-png-clipart.png') no-repeat center center/cover;
+    background: url('../images/bot.png') no-repeat center center/cover;
 }
 
 .container .services-section .chatbot .left p {
@@ -305,7 +305,8 @@ body {
 }
 
 .container .services-section .market-prediction .left {
-    background: url('https://pngimage.net/wp-content/uploads/2018/06/forex-trading-png-2.png') no-repeat center right;
+    background: url('../images/market.com.png') no-repeat center left/cover;
+    background-size: 300px;
 }
 
 .container .services-section .market-prediction .left p {
@@ -322,7 +323,7 @@ body {
 }
 
 .container .services-section .survey .left {
-    background: url('https://cutewallpaper.org/24/survey-png/download-meetoo39s-selfpaced-survey-feature-allows-you-to-ask-png-image-with-no-background-pngkeycom.png') no-repeat center center;
+    background: url('../images/survey.png') no-repeat center center;
     background-size: 250px 250px;
 }
 
@@ -354,6 +355,10 @@ body {
     color: #fff;
     cursor: pointer;
     padding: 5px;
+}
+
+.footer-container .footer a {
+    text-decoration: none;
 }
 
 .footer-container .footer .main {
@@ -573,6 +578,11 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.login-container .extra .checkbox a {
+    color: #9aa8c5;
+    text-decoration: none;
 }
 
 .login-container .left .extra .forgot {
@@ -1082,6 +1092,7 @@ hr {
 .footer-container .footer .items {
     margin: 30px 0px 0px;
 }
+
 
 /* Final */
 

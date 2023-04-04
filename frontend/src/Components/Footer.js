@@ -1,15 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <div className="footer-container">
-    <hr />
     <div className="footer">
         <div className="items pages">
         <ul>
             <li className="main">Pages</li>
-            <li>Terms and Conditions</li>
-            <li>Privacy policy</li>
+            <Link to='/terms'> <li>Terms and Conditions</li> </Link>
+            <Link to='/privacy'> <li>Privacy policy</li> </Link>
         </ul>
         </div>
         <div className="items copyright">© Bitcoin Investopedia, 2022</div>

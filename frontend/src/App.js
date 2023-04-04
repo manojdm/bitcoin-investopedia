@@ -11,6 +11,8 @@ import Chatbot from "./Components/Advisorybot";
 import Charts from "./Components/Charts";
 import Dashboard from "./Components/Dashboard";
 import Result from "./Components/Result";
+import Terms from "./Components/Terms";
+import Privacy from "./Components/Privacy";
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="/charts" element={<Charts />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/results" element={<Result />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       <Footer />
     </Router>

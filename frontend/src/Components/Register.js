@@ -70,7 +70,7 @@ const Register = () => {
         <div className="extra">
           <div className="checkbox">
             <input checked={agree} onChange={(e) => !agree ? setAgree(true) : setAgree(false)} type="checkbox" className="check" />
-            <label> I agree to terms &amp; conditions</label>
+            <label> I agree to <Link to='/terms'>terms &amp; conditions</Link></label>
           </div>
         </div>
         <div className="btn-submit">

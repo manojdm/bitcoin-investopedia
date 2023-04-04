@@ -19,7 +19,7 @@ const Dashboard = () => {
 <div className="container">
   <div className="dashboard-container">
     <div className="section greet-section">
-      <div className="title">Hola <span className="username">Manoj!!</span></div>
+      <div className="title">Hola <span className="username">{userData?.username}!!</span></div>
       <div className="greet-msg">Let's get you started</div>
     </div>
     <div className="sections services-section">
