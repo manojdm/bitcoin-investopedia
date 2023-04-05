@@ -25,6 +25,9 @@ import TypesBlockchain from './Widgets/TypesBlockchain';
 import NFT from './Widgets/NFT';
 import Trading from './Widgets/Trading';
 import TradingTypes from './Widgets/TradingTypes';
+import Tips from './Widgets/Tips';
+import TradingTips from './CustomMessages/TradingTips';
+import TradersMindset from './CustomMessages/TradersMindset';
 
 const botName = 'Bitcoin Investopedia';
 
@@ -40,7 +43,9 @@ const config = {
     results: {}
   },
   customMessages: {
-    chartCustom: (props) => <ChartCustom {...props} />
+    chartCustom: (props) => <ChartCustom {...props} />,
+    tradingTips: (props) => <TradingTips {...props} />,
+    tradersMindset: (props) => <TradersMindset {...props} />
   }
   ,
   widgets: [
@@ -141,6 +146,10 @@ const config = {
     {
       widgetName: "tradingtypes",
       widgetFunc: (props) => <TradingTypes {...props} />
+    },
+    {
+      widgetName: "tips",
+      widgetFunc: (props) => <Tips {...props} />
     }
   ]
 };

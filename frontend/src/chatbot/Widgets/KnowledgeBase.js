@@ -4,6 +4,7 @@ import nft from '../images/nft.png'
 import blockchain from '../images/blockchain.png'
 import candles from '../images/candles.webp'
 import tips from '../images/tips.png'
+import stratagy from '../images/stratagy.png'
 import { createChatBotMessage } from 'react-chatbot-kit'
 
 
@@ -28,6 +29,7 @@ const KnowledgeBase = (e) => {
             <li onClick={(e) => handleWidget('blockchain')} ><img src={blockchain}></img> Blockchain</li>
             <li onClick={(e) => handleWidget('nft')}><img src={nft}></img> NFT's</li>
             <li onClick={(e) => handleWidget('trading')}><img src={candles}></img> Trading</li>
+            <li onClick={(e) => handleWidget('tips')}><img src={stratagy}></img> Tips</li>
         </ul>
     </div>
   )

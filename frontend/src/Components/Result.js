@@ -161,7 +161,7 @@ const Result = () => {
       <ul>
         <li>There were around 4351 clicks to our ad campaign</li>
         <li>246 submissions were found to be valid after filtering the entires</li>
-        <li>84.55% people found out not to be happy with taxation and 15.44% are to found out to be happy with the taxations.</li>
+        <li>84.55% people are not happy with taxation and 15.44% are to found to be happy with the taxations.</li>
         <li>around 71.95% people are in losses due to recent bear market</li>
         <li>Out of all the entries only 6.91% of people found out to be in profits more than 50% of their investment. 4.47% of people are found to be in the profit range of 30-50% and around 15.83% of people are in profits range of 0-30% </li>
         <li>

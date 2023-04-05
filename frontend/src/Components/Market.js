@@ -75,7 +75,7 @@ const Market = () => {
             <div className="head">Conclusion: </div>
             <div className="text">
                 The EMA's indicate <span className="result">Bearish</span> momentum, You
-                can take help of other indicators and conclude your next movement
+                can also help of other indicators to be extra sure.
             </div>
             </div>
         </div>

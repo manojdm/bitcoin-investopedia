@@ -29,13 +29,11 @@ const login = async (req, res) => {
                 token: generateToken(user._id)
             })
         } else {
-            // res.json({
-            //     error: "User not found"
-            // })
-            throw new Error('User not found')
+
+            throw new Error('username or password doesn\'t match')
         }
     } catch(e) {
-        console.log(e)
+        res.status(404).send({error: e.message})
     }
 }
 

@@ -67,7 +67,7 @@
 }
 
 /* Custom Message */
-.custom-chart {
+.custom-msg {
     padding: 10px 10px;
     background: gray;
     width: 164.5px;
@@ -78,6 +78,18 @@
     cursor: pointer;
 }
 
+.custom-msg.trading-tips {
+    text-align: left;
+}
+
+.custom-msg.trading-tips .tips-container {
+    margin-top: 24px;
+}
+
+.custom-msg.trading-tips .tips-container li {
+    list-style: none;
+    margin: 8px 0px;
+}
 
 /* Prices */
 .ul-container ul {
@@ -196,7 +208,7 @@
     width: 180px !important;
     text-align: justify;
     margin-left: 60px;
-    padding: 10px 0px;
+    padding: 10px 10px;
     background: gray;
     border-radius: 5px;
     font-size: 0.85rem;    

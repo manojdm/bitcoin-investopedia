@@ -3,11 +3,8 @@ import { ActionProvider } from '../chatbot/actionProvider';
 import config from '../chatbot/config';
 import MessageParser from '../chatbot/messageParser';
 import Chatbot from "react-chatbot-kit";
-import { useDispatch, useSelector } from 'react-redux';
 import '../styles/chatbot.css'
 import 'react-chatbot-kit/build/main.css';
-import { getMessages } from '../Actions/messageActions';
-
 
 
 const Advisorybot = () => {

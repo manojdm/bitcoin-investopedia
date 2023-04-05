@@ -3,6 +3,8 @@ import what from '../images/what.png'
 import how from '../images/how.png'
 import blockchain from '../images/blockchain.png'
 import { createChatBotMessage } from 'react-chatbot-kit'
+import base from '../../config/knowledgebase'
+
 
 const Blockchain = (e) => {
 
